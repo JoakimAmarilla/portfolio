@@ -1,0 +1,12 @@
+html{
+    background-color: gray;
+}
+
+#banner{
+    background-color: darkgray;
+    color: lightgoldenrodyellow;
+    align-items: center;
+    text-align: center;
+    margin: 5% 5%;
+
+}
