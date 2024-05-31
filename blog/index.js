@@ -11,7 +11,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res)=>{
-    res.render("home.ejs")
+    res.render("home.ejs",{date: "05-21-24"})
 })
 
 app.listen(port, ()=>{

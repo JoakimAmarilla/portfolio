@@ -1,12 +1,58 @@
 html{
-    background-color: gray;
+    background-color: #d3cfc5;
 }
 
-#banner{
-    background-color: darkgray;
+.header{
+    background-color: #000000;
     color: lightgoldenrodyellow;
     align-items: center;
     text-align: center;
     margin: 5% 5%;
+    position: relative;
+    min-height: 7em;
 
+}
+
+.header h1{
+    color: #ffffff;
+    text-decoration: underline;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    translate:0 -25%;
+
+    font-size: 4em;
+    margin: 0em 0em;
+    margin-block: 0;
+}
+
+.header a{
+    color: lightgoldenrodyellow;
+    display: block;
+    background-color: #7f604a;
+    position: absolute;
+    top: 66%;
+
+    padding: .2em .2em .2em 0em;
+}
+
+#options hr{
+    height: .1em;
+    border: 0px;
+    background-color: black;
+
+    margin-block: 0;
+}
+
+#options ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 0;
+    padding-inline: 0;
+    margin-block: .2em;
+}
+
+#options ul li {
+    list-style-type: none;
 }
