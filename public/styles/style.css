@@ -8,10 +8,10 @@ html{
     color: lightgoldenrodyellow;
     align-items: center;
     text-align: center;
-    margin: 1% 5%;
+    margin: 0% 0%;
     position: relative;
-    min-height: 9em;
-    min-width: 346px;
+    min-height: 3em;
+    max-width: 75%;
 
 }
 
@@ -22,9 +22,10 @@ html{
     font-weight: bold;
 
     position: absolute;
+    align-content: center;
     top: 5%; left: 0; right: 0; bottom: 0;
 
-    font-size: 6em;
+    font-size: 2em;
     margin: auto;
     margin-block: 0;
 }
@@ -33,14 +34,18 @@ html{
     color: lightgoldenrodyellow;
     display: block;
     background-color: #7f604a;
-    font-size: 1.2em;
+    font-size: .8em;
     font-weight: bold;
     text-decoration: none;
     position: absolute;
-    top: 66%;
+    top: 50%;
 
     padding: .1em .6em 0em .1em;
     clip-path: polygon(0% 0%, 80% 00%, 100% 50%, 80% 100%, 0% 100%);
+}
+
+#options{
+    max-width: 75%;
 }
 
 #options hr{
@@ -49,7 +54,14 @@ html{
     background-color: black;
 
     margin-block: 0;
+    margin-top: .3em;
+
 }
+
+#options ul li + img {
+    display: none;
+  }
+  
 
 #options ul {
     display: flex;
@@ -63,9 +75,32 @@ html{
 #options ul li {
     list-style-type: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: .6em;
+
+
 }
 
 #options ul li a {
     text-decoration: none;
+    padding-block: 0;
+    padding-inline: 0;
+    margin-block: .2em;
 }
+
+.container{
+    margin-top: .2em;
+    max-width: 75%;
+    height: 80%;
+
+    display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 39% .5% 59%;
+
+    gap: .2em;
+    
+}
+
+.container img{
+    max-width: 100%;
+}
+

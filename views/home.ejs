@@ -1,6 +1,26 @@
 <%- include("partials/header.ejs") %>
 
-<h1>Hello world! </h1>
+<div class="container">
+
+ <% for( n=0 ; n < posts.length; n++){ %>
+    <div>
+        <% if (posts[n].image) { %>
+            <img src="<%= posts[n].image %>" alt="Image random">
+        <% } %>
+        <h3><%= posts[n].header %></h3>
+        <p><%= posts[n].datePost %></p>
+        <p><%= posts[n].body %></p>
+
+    </div>
+        <% if(n%2==0){ %>
+            <div style="background-color: black;">
+                <p></p>
+            </div>
+        <% } %>
+ <% } %>
+
+
+</div>
 
 
 <%- include("partials/footer.ejs") %>
